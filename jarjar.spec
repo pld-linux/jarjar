@@ -4,8 +4,7 @@
 Summary:	Jar Jar Links
 Name:		jarjar
 Version:	0.9
-Release:	0.1
-Epoch:		0
+Release:	0.2
 License:	GPL
 Group:		Development/Languages/Java
 URL:		http://tonicsystems.com/products/jarjar/
@@ -21,7 +20,7 @@ BuildRequires:	junit
 BuildRequires:	maven >= 2.0.6
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	asm2
-Requires:	gnu-regexp
+Requires:	gnu.regexp
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
