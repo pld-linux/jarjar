@@ -1,16 +1,17 @@
 # TODO
 # - make maven2 plugin package
 %include	/usr/lib/rpm/macros.java
-Summary:	Jar Jar Links
+Summary:	Jar Jar Links utility
+Summary(pl.UTF-8):	Narzędzie Jar Jar Links
 Name:		jarjar
 Version:	0.9
 Release:	0.2
 License:	GPL
 Group:		Development/Languages/Java
-URL:		http://tonicsystems.com/products/jarjar/
 Source0:	http://dl.sourceforge.net/jarjar/%{name}-src-%{version}.zip
 # Source0-md5:	61825e60d0466e328c7d24a6cef2c643
 Source1:	%{name}-%{version}.pom
+URL:		http://tonicsystems.com/products/jarjar/
 BuildRequires:	ant >= 0:1.6
 BuildRequires:	ant-junit >= 0:1.6
 BuildRequires:	asm2
@@ -32,12 +33,25 @@ external dependencies. You can avoid problems where your library
 depends on a specific version of a library, which may conflict with
 the dependencies of another library.
 
+%description -l pl.UTF-8
+Jar Jar Links to narzędzie ułatwiające repakietowanie bibliotek Javy
+i osadzanie ich we własnych pakietach. Jest to przydatne w dwóch
+przypadkach:
+- aby stworzyć pojedynczy plik jar bez zewnętrznych zależności,
+- zby zapobiec problemom kiedy biblioteka zależy od konkretnej wersji
+  innej biblioteki, ale ta może być w konflikcie z zależnościami innej
+  biblioteki.
+
 %package javadoc
-Summary:	Javadoc for %{name}
+Summary:	Javadoc for Jar Jar Links
+Summary(pl.UTF-8):	Dokumentacja Javadoc do pakietu Jar Jar Links
 Group:		Documentation
 
 %description javadoc
-Documentation for %{name}.
+Documentation for Jar Jar Links.
+
+%description javadoc -l pl.UTF-8
+Dokumentacja Javadoc do pakietu Jar Jar Links.
 
 %prep
 %setup -q
