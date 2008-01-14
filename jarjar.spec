@@ -10,7 +10,6 @@ License:	GPL
 Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/jarjar/%{name}-src-%{version}.zip
 # Source0-md5:	61825e60d0466e328c7d24a6cef2c643
-Source1:	%{name}-%{version}.pom
 URL:		http://tonicsystems.com/products/jarjar/
 BuildRequires:	ant >= 0:1.6
 BuildRequires:	ant-junit >= 0:1.6
@@ -18,7 +17,7 @@ BuildRequires:	asm2
 BuildRequires:	gnu.regexp
 BuildRequires:	jpackage-utils
 BuildRequires:	junit
-BuildRequires:	maven >= 2.0.6
+BuildRequires:	maven = 2.0.7
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	asm2
 Requires:	gnu.regexp
@@ -63,7 +62,7 @@ ln -sf $(build-classpath gnu-regexp)
 ln -sf %{_javadir}/asm2.jar asm.jar
 ln -sf %{_javadir}/asm2-commons.jar asm-commons.jar
 ln -sf %{_javadir}/asm2-util.jar asm-util.jar
-ln -sf %{_datadir}/maven/lib/maven-core-2.0.6-uber.jar maven-plugin-api.jar
+ln -sf %{_datadir}/maven/lib/maven-core-2.0.7-uber.jar maven-plugin-api.jar
 cd -
 export CLASSPATH=$(build-classpath ant)
 %ant jar jar-util javadoc mojo test
