@@ -17,6 +17,7 @@ BuildRequires:	asm2
 BuildRequires:	gnu.regexp
 BuildRequires:	jpackage-utils
 BuildRequires:	junit
+BuildRequires:	unzip
 BuildRequires:	maven = 2.0.7
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	asm2
