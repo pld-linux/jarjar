@@ -1,6 +1,5 @@
 # TODO
 # - make maven2 plugin package
-%include	/usr/lib/rpm/macros.java
 Summary:	Jar Jar Links utility
 Summary(pl.UTF-8):	Narzędzie Jar Jar Links
 Name:		jarjar
